@@ -8,14 +8,16 @@ website:
     left:
     - text: "Syllabus"
       href: sylb.html
+    - text: "Readings"
+      href: readings.html     
     - text: "Computer setup"
       href: comp.html
     - text: "Useful functions"
       href: usefulfx.html
     - text: 'WS 1'
       href: ws1.qmd
-    # - text: 'WS 2'
-    #   href: ws2.qmd
+    - text: 'WS 2'
+      href: ws2.qmd
     # - text: 'WS 3'
     #   href: ws3.qmd
     # - text: 'WS 4'

@@ -48,9 +48,10 @@ Now we can make the hypervolume by selecting the data to be included and z-scori
 
 ```{r}
 df_before = df |> 
+  mutate(across(trophic_level:generation_time, scale)) |> 
   filter(period == 'Before') |> 
-  select(trophic_level, temp_preference, generation_time)|> 
-  mutate(across(trophic_level:generation_time, scale))
+  select(trophic_level, temp_preference, generation_time) 
+  
 
 df_before
 

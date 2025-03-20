@@ -1,0 +1,12 @@
+---
+title: "BSC6926-B53B Spring 2025"
+format: html
+---
+
+## Readings
+
+## Workshop week 1
+[Blonder 2017. Hypervolume concepts in niche- and trait-based ecology. Ecography](https://doi.org/10.1111/ecog.03187)\
+
+## Workshop week 2
+[Lesser et al. 2020. Trophic niche size and overlap decreases with increasing ecosystem productivity. Oikos](https://doi.org/10.1111/oik.07026)\

@@ -25,9 +25,10 @@ df = left_join(ab, tr, by = 'species') |>
 # Now we can make the hypervolume by selecting the data to be included and z-scoring
 
 df_before = df |> 
+  mutate(across(trophic_level:generation_time, scale)) |> 
   filter(period == 'Before') |> 
-  select(trophic_level, temp_preference, generation_time)|> 
-  mutate(across(trophic_level:generation_time, scale))
+  select(trophic_level, temp_preference, generation_time) 
+  
 
 df_before
 
@@ -79,7 +80,7 @@ hvj = hypervolume_join(df$hv[[1]], df$hv[[2]])
 plot(hvj, pairplot = T, colors=c('dodgerblue3','cyan2'),
      show.3d=T,plot.3d.axes.id=NULL,
      show.axes=TRUE, show.frame=TRUE,
-     show.random=T, show.density=TRUE,show.data=F,
+     show.random=T, show.density=TRUE,show.data=T,
      show.legend=T, limits=c(-5,5), 
      show.contour=F, contour.lwd= 2, 
      contour.type='alphahull', 
@@ -99,7 +100,7 @@ plot(hvj, pairplot = T, colors=c('dodgerblue3','cyan2'),
 plot(hvj, pairplot = T, colors=c('dodgerblue3','cyan2'),
      show.3d=FALSE,plot.3d.axes.id=NULL,
      show.axes=TRUE, show.frame=TRUE,
-     show.random=T, show.density=TRUE,show.data=F,
+     show.random=T, show.density=TRUE,show.data=T,
      show.legend=T, limits=c(-5,5), 
      show.contour=F, contour.lwd= 2, 
      contour.type='alphahull', 
@@ -119,7 +120,8 @@ plot(hvj, pairplot = T, colors=c('dodgerblue3','cyan2'),
 
 # size 
 df = df |> 
-  mutate(hv_size = map_dbl(hv, \(hv) get_volume(hv)))
+  mutate(hv_size = map_dbl(hv, \(hv) get_volume(hv)),
+         hv_cent = map(hv, \(hv) get_centroid(hv)))
 
 head(df)
 
@@ -157,7 +159,7 @@ df_w = df_w |>
                                                                     verbose = F)),
          hv_size = map_dbl(hv, \(hv) get_volume(hv)))
 
-df_w
+head(df_w)
 
 
 hvj_w = hypervolume_join(df_w$hv[[1]], df_w$hv[[2]])
@@ -165,7 +167,7 @@ hvj_w = hypervolume_join(df_w$hv[[1]], df_w$hv[[2]])
 plot(hvj_w, pairplot = T, colors=c('dodgerblue3','cyan2'),
      show.3d=FALSE,plot.3d.axes.id=NULL,
      show.axes=TRUE, show.frame=TRUE,
-     show.random=T, show.density=TRUE,show.data=F,
+     show.random=T, show.density=TRUE,show.data=T,
      show.legend=T, limits=c(-5,5), 
      show.contour=F, contour.lwd= 2, 
      contour.type='alphahull', 
@@ -183,6 +185,7 @@ plot(hvj_w, pairplot = T, colors=c('dodgerblue3','cyan2'),
 
 # centroid distance 
 hypervolume_distance(df_w$hv[[1]], df_w$hv[[2]], type = 'centroid', check.memory=F)
+hypervolume_distance(df$hv[[1]], df$hv[[2]], type = 'centroid', check.memory=F)
 
 # overlap 
 hvset_w = hypervolume_set(df_w$hv[[1]], df_w$hv[[2]], check.memory = F)
@@ -230,7 +233,7 @@ df_tot = df_tot |>
                                                      chunk.size = 1000, 
                                                      verbose = F)),
          hv_size = map_dbl(hv, \(hv) get_volume(hv)))
-
+head(df_tot)
 
 #plot
 hvj_tot = hypervolume_join(df_tot$hv[[1]], df_tot$hv[[2]])
@@ -238,7 +241,7 @@ hvj_tot = hypervolume_join(df_tot$hv[[1]], df_tot$hv[[2]])
 plot(hvj_tot, pairplot = T, colors=c('dodgerblue3','cyan2'),
      show.3d=FALSE,plot.3d.axes.id=NULL,
      show.axes=TRUE, show.frame=TRUE,
-     show.random=T, show.density=TRUE,show.data=F,
+     show.random=T, show.density=TRUE,show.data=T,
      show.legend=T, limits=c(-5,5), 
      show.contour=F, contour.lwd= 2, 
      contour.type='alphahull', 

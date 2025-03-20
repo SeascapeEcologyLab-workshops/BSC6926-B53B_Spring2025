@@ -54,6 +54,9 @@ fish = fish |>
   mutate(zcatch1 = (catch - mean(catch))/sd(catch), # manual
          zcatch2 = scale(catch)) # with scale
 
+fish |> group_by(species) |> 
+  mutate(zcatch1 = (catch - mean(catch))/sd(catch), # manual
+         zcatch2 = scale(catch))
 fish 
 
 # center = mean, scale = sd
@@ -74,6 +77,7 @@ fish_nest = fish |>
 
 fish_nest
 fish_nest$data
+fish_nest$data[[1]]
 
 # using .by in nest
 # column name becomes data unless you change .key
