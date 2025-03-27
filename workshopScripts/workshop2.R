@@ -110,7 +110,7 @@ HVvalues = function(df, ID_rows, names, mean, sd, n, z_score = F,
 # generate hvs ----
 # load all data
 d = read_csv('data/CESImixResults.csv')
-
+d
 # number or iterations
 reps = 3
 
@@ -131,6 +131,7 @@ df = d |>
   select(i, points) |> 
   unnest(points)
 
+
 df
 
 # generate hypervolumes
@@ -148,11 +149,12 @@ df = df |>
          hv_size = map_dbl(hv, \(hv) get_volume(hv)),
          centroid = map(hv, \(hv) get_centroid(hv)))
 
+# df1 = df
 #write_rds(df, 'data/CESIhvAll.rds', compress = 'gz')
 
 # overlap within species by season 
-ov_sn = df |> 
-  select(species, season, hv, hv_size) |> 
+ov_sn = df1 |> 
+  select(species, season, hv, hv_size, i) |> 
   pivot_wider(names_from = season, values_from = c(hv,hv_size)) |> 
   mutate(size_rat = hv_size_Dry/hv_size_Wet,
          set = map2(hv_Wet,hv_Dry, \(hv1, hv2) hypervolume_set(hv1, hv2, check.memory = F, verbose = F)),

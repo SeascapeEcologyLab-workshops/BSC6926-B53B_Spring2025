@@ -6,4 +6,5 @@
 /.quarto/
 ws2_cache/
 ws1_cache/
+ws3_cache/
 data/*.rds
