@@ -22,7 +22,9 @@ website:
       href: ws3.qmd
     - text: 'WS 4'
       href: ws4.qmd
-
+    right:
+    - text: 'Assignment'
+      href: asmt.qmd
 
 format:
   html:

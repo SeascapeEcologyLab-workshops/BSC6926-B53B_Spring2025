@@ -17,7 +17,7 @@ This vignette uses hypervolumes to understand the spatial variation in trait div
 
 R script: [github](https://github.com/SeascapeEcologyLab-workshops/BSC6926-B53B_Spring2025/blob/main/workshopScripts/workshop4.R)
 
-[R script of workshop 3](workshopScripts/workshop4.R)
+[R script of workshop 4](workshopScripts/workshop4.R)
 
 ## data
 The data used for this example comes from the [NOAA](https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.nodc:NCRMP-Benthic-PR) which monitors coral benthic communities throughout Puerto Rico. The [benthic cover data](https://github.com/SeascapeEcologyLab-workshops/BSC6926-B53B_Spring2025/blob/main/data/PR_coral_2021.csv) consists of percent cover (pc = mean percent cover) from coral species collected across each site in the 8 regions in 2021, as well as information about each site.  Data is averaged across transects at each site. The [coral trait data](https://github.com/SeascapeEcologyLab-workshops/BSC6926-B53B_Spring2025/blob/main/data/coral_traits.csv) is based on average values of each trait for each species from published literature values. This dataset is z-scored already across all species for each trait.
