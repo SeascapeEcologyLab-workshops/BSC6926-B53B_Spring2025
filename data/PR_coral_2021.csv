@@ -1,0 +1,333 @@
+site,region,reef_zone,depth,dist_river,dist_mpa,species,pc
+beril,southwest,shelf edge,20,12.2,0,Agaricia agaricites,0.842
+beril,southwest,shelf edge,20,12.2,0,Madracis decactis,0.038
+beril,southwest,shelf edge,20,12.2,0,Meandrina meandrites,0.268
+beril,southwest,shelf edge,20,12.2,0,Montastraea cavernosa,1.74
+beril,southwest,shelf edge,20,12.2,0,Orbicella annularis,2.605
+beril,southwest,shelf edge,20,12.2,0,Orbicella faveolata,4.312
+beril,southwest,shelf edge,20,12.2,0,Orbicella franksi,0.9
+beril,southwest,shelf edge,20,12.2,0,Porites astreoides,1.236
+beril,southwest,shelf edge,20,12.2,0,Porites porites,1.176
+beril,southwest,shelf edge,20,12.2,0,Pseudodiploria strigosa,0.318
+beril,southwest,shelf edge,20,12.2,0,Siderastrea siderea,1.462
+boya vieja (2015),southwest,shelf edge,20,16.3,0,Agaricia agaricites,1.006
+boya vieja (2015),southwest,shelf edge,20,16.3,0,Agaricia lamarcki,0.39
+boya vieja (2015),southwest,shelf edge,20,16.3,0,Diploria labyrinthiformis,0.22799999999999998
+boya vieja (2015),southwest,shelf edge,20,16.3,0,Meandrina meandrites,0.268
+boya vieja (2015),southwest,shelf edge,20,16.3,0,Montastraea cavernosa,0.34400000000000003
+boya vieja (2015),southwest,shelf edge,20,16.3,0,Orbicella annularis,7.09
+boya vieja (2015),southwest,shelf edge,20,16.3,0,Orbicella faveolata,8.826
+boya vieja (2015),southwest,shelf edge,20,16.3,0,Orbicella franksi,5.352
+boya vieja (2015),southwest,shelf edge,20,16.3,0,Porites astreoides,3.394
+boya vieja (2015),southwest,shelf edge,20,16.3,0,Porites furcata,0.092
+boya vieja (2015),southwest,shelf edge,20,16.3,0,Porites porites,0.384
+boya vieja (2015),southwest,shelf edge,20,16.3,0,Siderastrea siderea,0.20400000000000001
+cabezas de san juan,north/northeast,fore reef,10,8.8,0,Diploria labyrinthiformis,0.44400000000000006
+cabezas de san juan,north/northeast,fore reef,10,8.8,0,Montastraea cavernosa,0.33199999999999996
+cabezas de san juan,north/northeast,fore reef,10,8.8,0,Porites astreoides,1.984
+cabezas de san juan,north/northeast,fore reef,10,8.8,0,Pseudodiploria clivosa,0.148
+cabezas de san juan,north/northeast,fore reef,10,8.8,0,Pseudodiploria strigosa,0.746
+cabezas de san juan,north/northeast,fore reef,10,8.8,0,Siderastrea siderea,1.266
+canal luis pena,vieques/culebra,fore reef,5,32,0,Colpophyllia natans,0.45399999999999996
+canal luis pena,vieques/culebra,fore reef,5,32,0,Orbicella annularis,4.268
+canal luis pena,vieques/culebra,fore reef,5,32,0,Orbicella faveolata,0.518
+canal luis pena,vieques/culebra,fore reef,5,32,0,Orbicella franksi,0.176
+canal luis pena,vieques/culebra,fore reef,5,32,0,Porites astreoides,1.09
+canal luis pena,vieques/culebra,fore reef,5,32,0,Porites furcata,0.296
+canal luis pena,vieques/culebra,fore reef,5,32,0,Porites porites,0.65
+canal luis pena,vieques/culebra,fore reef,5,32,0,Siderastrea siderea,0.04
+canjilones (vieques),vieques/culebra,bank/shelf,15,20.5,10,Agaricia agaricites,1.354
+canjilones (vieques),vieques/culebra,bank/shelf,15,20.5,10,Agaricia lamarcki,0.184
+canjilones (vieques),vieques/culebra,bank/shelf,15,20.5,10,Orbicella annularis,4.953
+canjilones (vieques),vieques/culebra,bank/shelf,15,20.5,10,Orbicella faveolata,5.306
+canjilones (vieques),vieques/culebra,bank/shelf,15,20.5,10,Orbicella franksi,1.6480000000000001
+canjilones (vieques),vieques/culebra,bank/shelf,15,20.5,10,Porites astreoides,2.95
+canjilones (vieques),vieques/culebra,bank/shelf,15,20.5,10,Porites porites,0.136
+canjilones (vieques),vieques/culebra,bank/shelf,15,20.5,10,Siderastrea siderea,0.502
+carlos rosario,vieques/culebra,fore reef,10,32,0,Agaricia agaricites,0.076
+carlos rosario,vieques/culebra,fore reef,10,32,0,Montastraea cavernosa,0.422
+carlos rosario,vieques/culebra,fore reef,10,32,0,Orbicella annularis,3.9819999999999998
+carlos rosario,vieques/culebra,fore reef,10,32,0,Orbicella faveolata,1.642
+carlos rosario,vieques/culebra,fore reef,10,32,0,Orbicella franksi,4.268
+carlos rosario,vieques/culebra,fore reef,10,32,0,Porites astreoides,1.444
+carlos rosario,vieques/culebra,fore reef,10,32,0,Porites furcata,0.096
+carlos rosario,vieques/culebra,fore reef,10,32,0,Porites porites,2.144
+carlos rosario,vieques/culebra,fore reef,10,32,0,Siderastrea siderea,0.264
+cayo aurora,southwest,reef crest,5,7,0,Acropora cervicornis,0.96
+cayo aurora,southwest,reef crest,5,7,0,Acropora palmata,23.630000000000003
+cayo aurora,southwest,reef crest,5,7,0,Agaricia agaricites,0.274
+cayo aurora,southwest,reef crest,5,7,0,Porites astreoides,0.98
+cayo aurora,southwest,reef crest,5,7,0,Pseudodiploria strigosa,0.10600000000000001
+cayo aurora,southwest,reef crest,5,7,0,Siderastrea siderea,0.522
+cayo caribes (2016),southeast,fore reef,10,6.7,0,Agaricia agaricites,0.45799999999999996
+cayo caribes (2016),southeast,fore reef,10,6.7,0,Montastraea cavernosa,4.516
+cayo caribes (2016),southeast,fore reef,10,6.7,0,Orbicella annularis,1.4749999999999999
+cayo caribes (2016),southeast,fore reef,10,6.7,0,Orbicella faveolata,2.9499999999999997
+cayo caribes (2016),southeast,fore reef,10,6.7,0,Porites astreoides,2.116
+cayo caribes (2016),southeast,fore reef,10,6.7,0,Pseudodiploria strigosa,0.384
+cayo caribes (2016),southeast,fore reef,10,6.7,0,Siderastrea siderea,1.04
+cayo coral,southwest,fore reef,5,6,0,Agaricia agaricites,1.1600000000000001
+cayo coral,southwest,fore reef,5,6,0,Colpophyllia natans,0.858
+cayo coral,southwest,fore reef,5,6,0,Madracis decactis,0.144
+cayo coral,southwest,fore reef,5,6,0,Meandrina meandrites,0.192
+cayo coral,southwest,fore reef,5,6,0,Montastraea cavernosa,0.994
+cayo coral,southwest,fore reef,5,6,0,Orbicella annularis,2.207
+cayo coral,southwest,fore reef,5,6,0,Orbicella faveolata,3.57
+cayo coral,southwest,fore reef,5,6,0,Orbicella franksi,0.844
+cayo coral,southwest,fore reef,5,6,0,Porites astreoides,0.946
+cayo coral,southwest,fore reef,5,6,0,Porites porites,0.42
+cayo coral,southwest,fore reef,5,6,0,Pseudodiploria strigosa,1.014
+cayo coral,southwest,fore reef,5,6,0,Siderastrea siderea,0.8240000000000001
+cayo diablo (2016),north/northeast,fore reef,5,10.7,0,Acropora cervicornis,0.37
+cayo diablo (2016),north/northeast,fore reef,5,10.7,0,Agaricia agaricites,0.544
+cayo diablo (2016),north/northeast,fore reef,5,10.7,0,Orbicella annularis,4.215
+cayo diablo (2016),north/northeast,fore reef,5,10.7,0,Orbicella faveolata,8.43
+cayo diablo (2016),north/northeast,fore reef,5,10.7,0,Porites astreoides,0.74
+cayo diablo (2016),north/northeast,fore reef,5,10.7,0,Porites furcata,0.638
+cayo diablo (2016),north/northeast,fore reef,5,10.7,0,Porites porites,2.586
+cayo diablo (2016),north/northeast,fore reef,5,10.7,0,Pseudodiploria strigosa,0.31
+cayo ratones,southeast,fore reef,5,4.05,4.69,Agaricia agaricites,1.01
+cayo ratones,southeast,fore reef,5,4.05,4.69,Montastraea cavernosa,1.9939999999999998
+cayo ratones,southeast,fore reef,5,4.05,4.69,Orbicella annularis,0.38
+cayo ratones,southeast,fore reef,5,4.05,4.69,Orbicella faveolata,0.76
+cayo ratones,southeast,fore reef,5,4.05,4.69,Porites astreoides,0.046
+cayo ratones,southeast,fore reef,5,4.05,4.69,Porites porites,0.06
+cayo ratones,southeast,fore reef,5,4.05,4.69,Siderastrea radians,0.072
+cayo ratones,southeast,fore reef,5,4.05,4.69,Siderastrea siderea,11.614
+cibuco (2013),north/northeast,fore reef,10,0.7,0,Agaricia agaricites,0.192
+cibuco (2013),north/northeast,fore reef,10,0.7,0,Montastraea cavernosa,0.13799999999999998
+cibuco (2013),north/northeast,fore reef,10,0.7,0,Orbicella annularis,3.743
+cibuco (2013),north/northeast,fore reef,10,0.7,0,Orbicella faveolata,6.17
+cibuco (2013),north/northeast,fore reef,10,0.7,0,Porites astreoides,1.152
+cibuco (2013),north/northeast,fore reef,10,0.7,0,Porites porites,17.688
+dakiti,vieques/culebra,bank/shelf,20,37,4.9,Agaricia fragilis,0.088
+dakiti,vieques/culebra,bank/shelf,20,37,4.9,Agaricia lamarcki,0.148
+dakiti,vieques/culebra,bank/shelf,20,37,4.9,Diploria labyrinthiformis,0.382
+dakiti,vieques/culebra,bank/shelf,20,37,4.9,Orbicella annularis,2.29
+dakiti,vieques/culebra,bank/shelf,20,37,4.9,Orbicella faveolata,1.996
+dakiti,vieques/culebra,bank/shelf,20,37,4.9,Orbicella franksi,1.77
+dakiti,vieques/culebra,bank/shelf,20,37,4.9,Porites astreoides,2.17
+dakiti,vieques/culebra,bank/shelf,20,37,4.9,Porites porites,0.8079999999999999
+dakiti,vieques/culebra,bank/shelf,20,37,4.9,Siderastrea siderea,1.17
+derrumbadero,south,shelf edge,15,8.6,5.83,Agaricia agaricites,2.168
+derrumbadero,south,shelf edge,15,8.6,5.83,Colpophyllia natans,1.1039999999999999
+derrumbadero,south,shelf edge,15,8.6,5.83,Diploria labyrinthiformis,0.636
+derrumbadero,south,shelf edge,15,8.6,5.83,Meandrina meandrites,0.20800000000000002
+derrumbadero,south,shelf edge,15,8.6,5.83,Montastraea cavernosa,1.072
+derrumbadero,south,shelf edge,15,8.6,5.83,Orbicella annularis,5.104
+derrumbadero,south,shelf edge,15,8.6,5.83,Orbicella faveolata,4.53
+derrumbadero,south,shelf edge,15,8.6,5.83,Orbicella franksi,5.676
+derrumbadero,south,shelf edge,15,8.6,5.83,Porites astreoides,4.498
+derrumbadero,south,shelf edge,15,8.6,5.83,Pseudodiploria strigosa,0.22999999999999998
+derrumbadero,south,shelf edge,15,8.6,5.83,Siderastrea siderea,0.10800000000000001
+dominos,north/northeast,reef crest,5,3.8,3.66,Porites astreoides,0.242
+dominos,north/northeast,reef crest,5,3.8,3.66,Porites porites,1.212
+dominos,north/northeast,reef crest,5,3.8,3.66,Pseudodiploria clivosa,2.124
+dominos,north/northeast,reef crest,5,3.8,3.66,Pseudodiploria strigosa,0.348
+dominos,north/northeast,reef crest,5,3.8,3.66,Siderastrea radians,0.044
+el negro 10m,west,fore reef,10,8,1,Agaricia agaricites,3.406
+el negro 10m,west,fore reef,10,8,1,Agaricia lamarcki,0.254
+el negro 10m,west,fore reef,10,8,1,Meandrina meandrites,0.096
+el negro 10m,west,fore reef,10,8,1,Montastraea cavernosa,2.722
+el negro 10m,west,fore reef,10,8,1,Orbicella annularis,4.148
+el negro 10m,west,fore reef,10,8,1,Orbicella faveolata,1.954
+el negro 10m,west,fore reef,10,8,1,Orbicella franksi,3.7680000000000002
+el negro 10m,west,fore reef,10,8,1,Porites astreoides,1.638
+el negro 10m,west,fore reef,10,8,1,Porites furcata,0.038
+el negro 10m,west,fore reef,10,8,1,Pseudodiploria strigosa,0.09
+el negro 10m,west,fore reef,10,8,1,Siderastrea siderea,1.192
+el negro 5m,west,reef crest,5,8,1,Agaricia agaricites,2.4579999999999997
+el negro 5m,west,reef crest,5,8,1,Agaricia lamarcki,0.124
+el negro 5m,west,reef crest,5,8,1,Colpophyllia natans,1.246
+el negro 5m,west,reef crest,5,8,1,Montastraea cavernosa,0.238
+el negro 5m,west,reef crest,5,8,1,Orbicella annularis,9.768
+el negro 5m,west,reef crest,5,8,1,Orbicella faveolata,2.618
+el negro 5m,west,reef crest,5,8,1,Orbicella franksi,1.64
+el negro 5m,west,reef crest,5,8,1,Porites astreoides,4.488
+el negro 5m,west,reef crest,5,8,1,Porites furcata,0.162
+el negro 5m,west,reef crest,5,8,1,Porites porites,0.758
+el negro 5m,west,reef crest,5,8,1,Siderastrea siderea,0.296
+el seco,vieques/culebra,shelf edge,30,63,13,Agaricia fragilis,0.05
+el seco,vieques/culebra,shelf edge,30,63,13,Agaricia lamarcki,0.426
+el seco,vieques/culebra,shelf edge,30,63,13,Orbicella annularis,11.57
+el seco,vieques/culebra,shelf edge,30,63,13,Orbicella franksi,23.14
+el seco,vieques/culebra,shelf edge,30,63,13,Porites astreoides,0.9540000000000001
+el seco,vieques/culebra,shelf edge,30,63,13,Siderastrea siderea,0.168
+esperanza,vieques/culebra,bank/shelf,10,31.3,1.34,Orbicella annularis,0.266
+esperanza,vieques/culebra,bank/shelf,10,31.3,1.34,Orbicella faveolata,0.532
+esperanza,vieques/culebra,bank/shelf,10,31.3,1.34,Porites astreoides,0.64
+esperanza,vieques/culebra,bank/shelf,10,31.3,1.34,Porites furcata,0.20400000000000001
+esperanza,vieques/culebra,bank/shelf,10,31.3,1.34,Porites porites,0.06999999999999999
+esperanza,vieques/culebra,bank/shelf,10,31.3,1.34,Pseudodiploria strigosa,0.068
+esperanza,vieques/culebra,bank/shelf,10,31.3,1.34,Siderastrea siderea,0.35
+gallardo (2019),west,bank/shelf,5,24,7.15,Acropora palmata,47.472
+gallardo (2019),west,bank/shelf,5,24,7.15,Agaricia agaricites,0.10200000000000001
+maria langa 10m (2016),south,fore reef,10,3,7.5,Agaricia agaricites,0.432
+maria langa 10m (2016),south,fore reef,10,3,7.5,Dendrogyra cylindrus,0.8240000000000001
+maria langa 10m (2016),south,fore reef,10,3,7.5,Diploria labyrinthiformis,0.528
+maria langa 10m (2016),south,fore reef,10,3,7.5,Montastraea cavernosa,2.996
+maria langa 10m (2016),south,fore reef,10,3,7.5,Orbicella annularis,2.992
+maria langa 10m (2016),south,fore reef,10,3,7.5,Orbicella faveolata,5.984
+maria langa 10m (2016),south,fore reef,10,3,7.5,Porites astreoides,1.23
+maria langa 10m (2016),south,fore reef,10,3,7.5,Porites porites,0.048
+maria langa 10m (2016),south,fore reef,10,3,7.5,Pseudodiploria strigosa,4.654
+maria langa 10m (2016),south,fore reef,10,3,7.5,Siderastrea siderea,3.864
+maria langa 20m (2016),south,fore reef,15,3.3,7.5,Agaricia agaricites,5.2780000000000005
+maria langa 20m (2016),south,fore reef,15,3.3,7.5,Agaricia lamarcki,0.188
+maria langa 20m (2016),south,fore reef,15,3.3,7.5,Colpophyllia natans,1.232
+maria langa 20m (2016),south,fore reef,15,3.3,7.5,Madracis decactis,0.344
+maria langa 20m (2016),south,fore reef,15,3.3,7.5,Montastraea cavernosa,1.008
+maria langa 20m (2016),south,fore reef,15,3.3,7.5,Orbicella annularis,2.036
+maria langa 20m (2016),south,fore reef,15,3.3,7.5,Orbicella faveolata,3.642
+maria langa 20m (2016),south,fore reef,15,3.3,7.5,Orbicella franksi,0.432
+maria langa 20m (2016),south,fore reef,15,3.3,7.5,Porites astreoides,0.408
+maria langa 20m (2016),south,fore reef,15,3.3,7.5,Siderastrea siderea,2.09
+maria langa 5m,south,reef crest,5,3.2,7.5,Acropora cervicornis,0.268
+maria langa 5m,south,reef crest,5,3.2,7.5,Agaricia agaricites,0.048
+maria langa 5m,south,reef crest,5,3.2,7.5,Porites astreoides,1.98
+maria langa 5m,south,reef crest,5,3.2,7.5,Pseudodiploria strigosa,0.196
+maria langa 5m,south,reef crest,5,3.2,7.5,Siderastrea siderea,0.9239999999999999
+media luna 10m (parguera),southwest,fore reef,10,21.3,0,Agaricia agaricites,3.268
+media luna 10m (parguera),southwest,fore reef,10,21.3,0,Colpophyllia natans,0.77
+media luna 10m (parguera),southwest,fore reef,10,21.3,0,Meandrina meandrites,0.264
+media luna 10m (parguera),southwest,fore reef,10,21.3,0,Montastraea cavernosa,1.728
+media luna 10m (parguera),southwest,fore reef,10,21.3,0,Orbicella annularis,8.360999999999999
+media luna 10m (parguera),southwest,fore reef,10,21.3,0,Orbicella faveolata,16.721999999999998
+media luna 10m (parguera),southwest,fore reef,10,21.3,0,Porites astreoides,5.346
+media luna 10m (parguera),southwest,fore reef,10,21.3,0,Porites furcata,0.45
+media luna 10m (parguera),southwest,fore reef,10,21.3,0,Porites porites,0.872
+media luna 10m (parguera),southwest,fore reef,10,21.3,0,Pseudodiploria strigosa,1.114
+media luna 10m (parguera),southwest,fore reef,10,21.3,0,Siderastrea siderea,1.794
+media luna 5m (parguera),southwest,back reef,5,21.3,0,Colpophyllia natans,0.27599999999999997
+media luna 5m (parguera),southwest,back reef,5,21.3,0,Dendrogyra cylindrus,0.40199999999999997
+media luna 5m (parguera),southwest,back reef,5,21.3,0,Orbicella annularis,9.47
+media luna 5m (parguera),southwest,back reef,5,21.3,0,Orbicella faveolata,3.7840000000000003
+media luna 5m (parguera),southwest,back reef,5,21.3,0,Siderastrea siderea,0.56
+palominitos (2016),north/northeast,fore reef,10,6.3,0,Orbicella annularis,8.455
+palominitos (2016),north/northeast,fore reef,10,6.3,0,Orbicella faveolata,8.614
+palominitos (2016),north/northeast,fore reef,10,6.3,0,Orbicella franksi,2.102
+palominitos (2016),north/northeast,fore reef,10,6.3,0,Porites astreoides,4.716
+palominitos (2016),north/northeast,fore reef,10,6.3,0,Porites porites,1.33
+palominos (2016),north/northeast,fore reef,20,6.8,0,Agaricia agaricites,1.524
+palominos (2016),north/northeast,fore reef,20,6.8,0,Agaricia fragilis,0.044
+palominos (2016),north/northeast,fore reef,20,6.8,0,Madracis decactis,1.732
+palominos (2016),north/northeast,fore reef,20,6.8,0,Montastraea cavernosa,1.064
+palominos (2016),north/northeast,fore reef,20,6.8,0,Orbicella annularis,0.27599999999999997
+palominos (2016),north/northeast,fore reef,20,6.8,0,Orbicella faveolata,0.5519999999999999
+palominos (2016),north/northeast,fore reef,20,6.8,0,Porites astreoides,2.3200000000000003
+palominos (2016),north/northeast,fore reef,20,6.8,0,Porites porites,1.766
+palominos (2016),north/northeast,fore reef,20,6.8,0,Siderastrea siderea,0.72
+puerto botes 15m,mona/desecheo,bank/shelf,15,26,0,Agaricia agaricites,0.54
+puerto botes 15m,mona/desecheo,bank/shelf,15,26,0,Colpophyllia natans,0.198
+puerto botes 15m,mona/desecheo,bank/shelf,15,26,0,Diploria labyrinthiformis,0.384
+puerto botes 15m,mona/desecheo,bank/shelf,15,26,0,Madracis decactis,0.09
+puerto botes 15m,mona/desecheo,bank/shelf,15,26,0,Montastraea cavernosa,0.31
+puerto botes 15m,mona/desecheo,bank/shelf,15,26,0,Orbicella annularis,1.343
+puerto botes 15m,mona/desecheo,bank/shelf,15,26,0,Orbicella faveolata,1.8059999999999998
+puerto botes 15m,mona/desecheo,bank/shelf,15,26,0,Orbicella franksi,0.8800000000000001
+puerto botes 15m,mona/desecheo,bank/shelf,15,26,0,Porites astreoides,1.8639999999999999
+puerto botes 15m,mona/desecheo,bank/shelf,15,26,0,Pseudodiploria strigosa,0.8240000000000001
+puerto botes 15m,mona/desecheo,bank/shelf,15,26,0,Siderastrea siderea,0.662
+puerto botes 20m,mona/desecheo,bank/shelf,20,26,0,Agaricia agaricites,1.512
+puerto botes 20m,mona/desecheo,bank/shelf,20,26,0,Colpophyllia natans,0.992
+puerto botes 20m,mona/desecheo,bank/shelf,20,26,0,Diploria labyrinthiformis,0.15
+puerto botes 20m,mona/desecheo,bank/shelf,20,26,0,Meandrina meandrites,0.26
+puerto botes 20m,mona/desecheo,bank/shelf,20,26,0,Montastraea cavernosa,0.22999999999999998
+puerto botes 20m,mona/desecheo,bank/shelf,20,26,0,Orbicella annularis,2.477
+puerto botes 20m,mona/desecheo,bank/shelf,20,26,0,Orbicella faveolata,4.506
+puerto botes 20m,mona/desecheo,bank/shelf,20,26,0,Orbicella franksi,0.44800000000000006
+puerto botes 20m,mona/desecheo,bank/shelf,20,26,0,Porites astreoides,0.934
+puerto botes 20m,mona/desecheo,bank/shelf,20,26,0,Porites porites,2.64
+puerto botes 20m,mona/desecheo,bank/shelf,20,26,0,Siderastrea siderea,0.074
+puerto canoas 30m,mona/desecheo,bank/shelf,30,26,0,Agaricia agaricites,1.1260000000000001
+puerto canoas 30m,mona/desecheo,bank/shelf,30,26,0,Colpophyllia natans,0.77
+puerto canoas 30m,mona/desecheo,bank/shelf,30,26,0,Madracis decactis,0.638
+puerto canoas 30m,mona/desecheo,bank/shelf,30,26,0,Meandrina meandrites,0.5559999999999999
+puerto canoas 30m,mona/desecheo,bank/shelf,30,26,0,Montastraea cavernosa,0.5700000000000001
+puerto canoas 30m,mona/desecheo,bank/shelf,30,26,0,Orbicella annularis,8.895999999999999
+puerto canoas 30m,mona/desecheo,bank/shelf,30,26,0,Orbicella faveolata,9.31
+puerto canoas 30m,mona/desecheo,bank/shelf,30,26,0,Orbicella franksi,8.484
+puerto canoas 30m,mona/desecheo,bank/shelf,30,26,0,Porites astreoides,2.354
+puerto canoas 30m,mona/desecheo,bank/shelf,30,26,0,Porites porites,0.304
+puerto canoas 30m,mona/desecheo,bank/shelf,30,26,0,Siderastrea siderea,0.398
+resuellos,west,bank/shelf,10,6,5.15,Agaricia agaricites,0.388
+resuellos,west,bank/shelf,10,6,5.15,Colpophyllia natans,0.74
+resuellos,west,bank/shelf,10,6,5.15,Diploria labyrinthiformis,0.668
+resuellos,west,bank/shelf,10,6,5.15,Meandrina meandrites,0.744
+resuellos,west,bank/shelf,10,6,5.15,Montastraea cavernosa,0.598
+resuellos,west,bank/shelf,10,6,5.15,Orbicella annularis,3.594
+resuellos,west,bank/shelf,10,6,5.15,Orbicella faveolata,6.6419999999999995
+resuellos,west,bank/shelf,10,6,5.15,Orbicella franksi,0.546
+resuellos,west,bank/shelf,10,6,5.15,Porites astreoides,1.7919999999999998
+resuellos,west,bank/shelf,10,6,5.15,Siderastrea siderea,3.4779999999999998
+tourmaline 10m,west,shelf edge,10,10,0,Acropora cervicornis,0.906
+tourmaline 10m,west,shelf edge,10,10,0,Agaricia agaricites,2.07
+tourmaline 10m,west,shelf edge,10,10,0,Agaricia fragilis,0.10400000000000001
+tourmaline 10m,west,shelf edge,10,10,0,Dendrogyra cylindrus,2.976
+tourmaline 10m,west,shelf edge,10,10,0,Diploria labyrinthiformis,0.34199999999999997
+tourmaline 10m,west,shelf edge,10,10,0,Madracis decactis,0.19
+tourmaline 10m,west,shelf edge,10,10,0,Meandrina meandrites,0.732
+tourmaline 10m,west,shelf edge,10,10,0,Montastraea cavernosa,0.612
+tourmaline 10m,west,shelf edge,10,10,0,Orbicella annularis,5.533
+tourmaline 10m,west,shelf edge,10,10,0,Orbicella faveolata,4.3580000000000005
+tourmaline 10m,west,shelf edge,10,10,0,Orbicella franksi,1.4500000000000002
+tourmaline 10m,west,shelf edge,10,10,0,Porites astreoides,4.998
+tourmaline 10m,west,shelf edge,10,10,0,Porites porites,3.204
+tourmaline 10m,west,shelf edge,10,10,0,Pseudodiploria strigosa,0.13999999999999999
+tourmaline 10m,west,shelf edge,10,10,0,Siderastrea siderea,0.29000000000000004
+tourmaline 20m,west,shelf edge,20,10,0,Agaricia agaricites,0.036
+tourmaline 20m,west,shelf edge,20,10,0,Colpophyllia natans,0.562
+tourmaline 20m,west,shelf edge,20,10,0,Diploria labyrinthiformis,0.096
+tourmaline 20m,west,shelf edge,20,10,0,Madracis decactis,0.192
+tourmaline 20m,west,shelf edge,20,10,0,Meandrina meandrites,0.446
+tourmaline 20m,west,shelf edge,20,10,0,Montastraea cavernosa,0.774
+tourmaline 20m,west,shelf edge,20,10,0,Orbicella annularis,10.608
+tourmaline 20m,west,shelf edge,20,10,0,Orbicella faveolata,11.314
+tourmaline 20m,west,shelf edge,20,10,0,Orbicella franksi,9.902
+tourmaline 20m,west,shelf edge,20,10,0,Porites astreoides,0.796
+tourmaline 20m,west,shelf edge,20,10,0,Siderastrea siderea,0.48600000000000004
+tourmaline 30m,west,shelf edge,30,10,0,Agaricia agaricites,0.482
+tourmaline 30m,west,shelf edge,30,10,0,Agaricia lamarcki,1.06
+tourmaline 30m,west,shelf edge,30,10,0,Meandrina meandrites,0.21000000000000002
+tourmaline 30m,west,shelf edge,30,10,0,Montastraea cavernosa,0.71
+tourmaline 30m,west,shelf edge,30,10,0,Orbicella annularis,3.3369999999999997
+tourmaline 30m,west,shelf edge,30,10,0,Orbicella faveolata,6.6739999999999995
+tourmaline 30m,west,shelf edge,30,10,0,Porites astreoides,0.8
+tourmaline 30m,west,shelf edge,30,10,0,Siderastrea siderea,0.27599999999999997
+tres palmas 10m,west,bank/shelf,10,12,0,Agaricia agaricites,0.5579999999999999
+tres palmas 10m,west,bank/shelf,10,12,0,Colpophyllia natans,2.424
+tres palmas 10m,west,bank/shelf,10,12,0,Dendrogyra cylindrus,0.8640000000000001
+tres palmas 10m,west,bank/shelf,10,12,0,Meandrina meandrites,0.21800000000000003
+tres palmas 10m,west,bank/shelf,10,12,0,Montastraea cavernosa,4.884
+tres palmas 10m,west,bank/shelf,10,12,0,Orbicella annularis,0.743
+tres palmas 10m,west,bank/shelf,10,12,0,Orbicella faveolata,1.486
+tres palmas 10m,west,bank/shelf,10,12,0,Porites astreoides,2.656
+tres palmas 10m,west,bank/shelf,10,12,0,Pseudodiploria strigosa,2.042
+tres palmas 10m,west,bank/shelf,10,12,0,Siderastrea siderea,1.408
+tres palmas 20m,west,bank/shelf,20,12,0,Agaricia agaricites,1.71
+tres palmas 20m,west,bank/shelf,20,12,0,Agaricia fragilis,0.12
+tres palmas 20m,west,bank/shelf,20,12,0,Agaricia lamarcki,0.12
+tres palmas 20m,west,bank/shelf,20,12,0,Colpophyllia natans,0.258
+tres palmas 20m,west,bank/shelf,20,12,0,Diploria labyrinthiformis,0.21400000000000002
+tres palmas 20m,west,bank/shelf,20,12,0,Madracis decactis,0.208
+tres palmas 20m,west,bank/shelf,20,12,0,Meandrina meandrites,3.078
+tres palmas 20m,west,bank/shelf,20,12,0,Montastraea cavernosa,1.872
+tres palmas 20m,west,bank/shelf,20,12,0,Orbicella annularis,5.104
+tres palmas 20m,west,bank/shelf,20,12,0,Orbicella faveolata,3.478
+tres palmas 20m,west,bank/shelf,20,12,0,Orbicella franksi,6.732
+tres palmas 20m,west,bank/shelf,20,12,0,Porites astreoides,2.0420000000000003
+tres palmas 20m,west,bank/shelf,20,12,0,Pseudodiploria strigosa,1.3760000000000001
+tres palmas 20m,west,bank/shelf,20,12,0,Siderastrea siderea,1.6560000000000001
+tres palmas 5m,west,reef crest,5,12,0,Acropora palmata,23.07
+tres palmas 5m,west,reef crest,5,12,0,Porites astreoides,0.628
+tres palmas 5m,west,reef crest,5,12,0,Pseudodiploria clivosa,0.772
+tres palmas 5m,west,reef crest,5,12,0,Pseudodiploria strigosa,1.9260000000000002
+west reef,south,fore reef,10,8.8,0,Agaricia agaricites,0.592
+west reef,south,fore reef,10,8.8,0,Montastraea cavernosa,2.646
+west reef,south,fore reef,10,8.8,0,Orbicella annularis,2.178
+west reef,south,fore reef,10,8.8,0,Orbicella faveolata,0.478
+west reef,south,fore reef,10,8.8,0,Orbicella franksi,3.878
+west reef,south,fore reef,10,8.8,0,Porites astreoides,2.024
+west reef,south,fore reef,10,8.8,0,Porites porites,0.206
+west reef,south,fore reef,10,8.8,0,Pseudodiploria strigosa,0.366
+west reef,south,fore reef,10,8.8,0,Siderastrea siderea,1.448

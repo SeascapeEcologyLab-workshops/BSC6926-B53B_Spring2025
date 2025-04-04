@@ -20,18 +20,10 @@ website:
       href: ws2.qmd
     - text: 'WS 3'
       href: ws3.qmd
-    # - text: 'WS 4'
-    #   href: ws4.qmd
+    - text: 'WS 4'
+      href: ws4.qmd
 
 
-
-    # right:
-    # - text: 'HW 1'
-    #   href: hw1.qmd
-    # - text: 'HW 2'
-    #   href: hw2.qmd
-    # - text: 'HW 3'
-    #   href: hw3.qmd
 format:
   html:
     theme: yeti

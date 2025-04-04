@@ -13,3 +13,6 @@ format: html
 
 ## Workshop week 3
 [Jones et al. 2021. Stress gradients interact with disturbance to reveal alternative states in salt marsh: Multivariate resilience at the landscape scale. Journal of Ecology](https://doi.org/10.1111/1365-2745.13552)
+
+## Workshop week 4
+[Helsen et al. 2020. Inter- and intraspecific trait variation shape multidimensional trait overlap between two plant invaders and the invaded communities](https://doi.org/10.1111/oik.06919)

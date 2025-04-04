@@ -521,7 +521,7 @@ d = df_lsr |>
                           c('JON', 'RKB', 'TWN', 'RAN', 'WHP','BLK')))
 
 ggplot(d, aes(ychange, lsr, color = BASIN))+
-  geom_hline(aes(yintercept = 1), linetype = 'dashed')+
+  geom_hline(aes(yintercept = 0), linetype = 'dashed')+
   geom_point(size = 2.5)+
   geom_smooth(data = d |> filter(model == 'Intercept'),
               method = 'lm', formula = y~1, 

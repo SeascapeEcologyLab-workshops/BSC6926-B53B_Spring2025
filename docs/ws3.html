@@ -181,6 +181,10 @@ window.Quarto = {
     <a class="nav-link active" href="./ws3.html" aria-current="page"> 
 <span class="menu-text">WS 3</span></a>
   </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./ws4.html"> 
+<span class="menu-text">WS 4</span></a>
+  </li>  
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
@@ -906,7 +910,7 @@ window.Quarto = {
 <span id="cb21-23"><a href="#cb21-23" aria-hidden="true" tabindex="-1"></a>                          <span class="fu">c</span>(<span class="st">'JON'</span>, <span class="st">'RKB'</span>, <span class="st">'TWN'</span>, <span class="st">'RAN'</span>, <span class="st">'WHP'</span>,<span class="st">'BLK'</span>)))</span>
 <span id="cb21-24"><a href="#cb21-24" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb21-25"><a href="#cb21-25" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(d, <span class="fu">aes</span>(ychange, lsr, <span class="at">color =</span> BASIN))<span class="sc">+</span></span>
-<span id="cb21-26"><a href="#cb21-26" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_hline</span>(<span class="fu">aes</span>(<span class="at">yintercept =</span> <span class="dv">1</span>), <span class="at">linetype =</span> <span class="st">'dashed'</span>)<span class="sc">+</span></span>
+<span id="cb21-26"><a href="#cb21-26" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_hline</span>(<span class="fu">aes</span>(<span class="at">yintercept =</span> <span class="dv">0</span>), <span class="at">linetype =</span> <span class="st">'dashed'</span>)<span class="sc">+</span></span>
 <span id="cb21-27"><a href="#cb21-27" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">size =</span> <span class="fl">2.5</span>)<span class="sc">+</span></span>
 <span id="cb21-28"><a href="#cb21-28" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>(<span class="at">data =</span> d <span class="sc">|&gt;</span> <span class="fu">filter</span>(model <span class="sc">==</span> <span class="st">'Intercept'</span>),</span>
 <span id="cb21-29"><a href="#cb21-29" aria-hidden="true" tabindex="-1"></a>              <span class="at">method =</span> <span class="st">'lm'</span>, <span class="at">formula =</span> y<span class="sc">~</span><span class="dv">1</span>, </span>
