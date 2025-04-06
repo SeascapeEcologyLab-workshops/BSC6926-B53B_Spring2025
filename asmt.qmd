@@ -2,9 +2,28 @@
 title: "BSC6926-B53B Spring 2025"
 format: html
 ---
+## Research question 
+How does the stability of environmental regimes influence the habitat suitability of salt marsh species?
 
 ## Manuscript assignment
+1. Define the environmental regime and its stability for a region (one per student)
+ - What is the environmental regime stability relative to the baseline using temperature, turbidity, and salinity as axes of your assigned basing?\
+2. Characterize the environmental niche of three species (white shrimp and 2 of your preference)
+ - What is the overall niche size of these three species?\
+ - What is the degree of niche overlap among these species?\
+ 
+3. Quantify habitat suitability changes for selected species
+ - How the proportion of suitable sites for your species has changed over 40 years, especially in the basin assigned for you?\
+
+### Basin assignments
+Alia - Pontchartrain \
+Carlos - Barataria \
+Emily - Terrebonne \
+Hannah-Marie - Vermilion-Teche \
+Nico - Calcasieu \
+
 
 ### Data 
 For this assignment we will be using the LDWF longterm data. 
 [LDWF seine data](https://github.com/SeascapeEcologyLab-workshops/BSC6926-B53B_Spring2025/blob/main/data/LDWFseinedata.csv)
+

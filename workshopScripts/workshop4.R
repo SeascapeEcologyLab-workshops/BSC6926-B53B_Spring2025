@@ -205,8 +205,6 @@ get_volume(hv_occ)
 get_centroid_weighted(hv_occ)
 
 
-
-
 # And turn it into a data frame to plot
 
 # convert to data frame
