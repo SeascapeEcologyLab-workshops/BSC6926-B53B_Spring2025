@@ -4,29 +4,68 @@ format: html
 ---
 
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(collapse = T, cache = T)
-```
+
+
 
 ## Research question 
 How does the stability of environmental regimes influence the habitat suitability of salt marsh species?
 
-```{r}
+
+
+::: {.cell}
+
+```{.r .cell-code}
 # load libraries
 library(tidyverse)
+## ── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+## ✔ dplyr     1.1.4     ✔ readr     2.1.5
+## ✔ forcats   1.0.0     ✔ stringr   1.5.1
+## ✔ ggplot2   3.5.1     ✔ tibble    3.2.1
+## ✔ lubridate 1.9.3     ✔ tidyr     1.3.1
+## ✔ purrr     1.0.2     
+## ── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+## ✖ dplyr::filter() masks stats::filter()
+## ✖ dplyr::lag()    masks stats::lag()
+## ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
 library(hypervolume)
+## Loading required package: Rcpp
 
 # load sav monitoring data 
 df = read_csv('data/LDWFseinedata.csv') 
+## Rows: 209451 Columns: 11
+## ── Column specification ────────────────────────────────────────────────────────
+## Delimiter: ","
+## chr (3): basin, sci_name, species
+## dbl (8): lat, lon, date, Salinity, WaterTemp, Turbidity, AirTemp, num
+## 
+## ℹ Use `spec()` to retrieve the full column specification for this data.
+## ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
 head(df)
+## # A tibble: 6 × 11
+##     lat   lon   date Salinity WaterTemp Turbidity AirTemp basin sci_name species
+##   <dbl> <dbl>  <dbl>    <dbl>     <dbl>     <dbl>   <dbl> <chr> <chr>    <chr>  
+## 1  29.1 -90.9 1.99e7     20.8      9.20         2      13 Terr… Calline… Blue C…
+## 2  29.1 -90.9 1.99e7     20.8      9.20         2      13 Terr… Micropo… Atlant…
+## 3  29.1 -90.9 1.99e7     20.8      9.20         2      13 Terr… Palaemo… Grass …
+## 4  29.1 -90.9 1.99e7     20.8      9.20         2      13 Terr… Membras… Rough …
+## 5  29.1 -90.9 1.99e7     20.8      9.20         2      13 Terr… Fundulu… Longno…
+## 6  29.1 -90.9 1.99e7     20.8      9.20         2      13 Terr… Sciaeno… Red Dr…
+## # ℹ 1 more variable: num <dbl>
 ```
+:::
+
+
 
 
 ## Manuscript assignment
 1. Define the environmental regime and its stability for a region (one per student)
  - What is the environmental regime stability relative to the baseline using temperature, turbidity, and salinity as axes of your assigned basing?\
  
-```{r, eval=F}
+
+
+::: {.cell}
+
+```{.r .cell-code}
 # one observation per seine
 df_e = read_csv('data/LDWFseinedata.csv') |> 
   filter(basin %in% c("Terrebonne","Pontchartrain", "Barataria",
@@ -49,16 +88,16 @@ df_e = read_csv('data/LDWFseinedata.csv') |>
          centroid = map(hv, \(hv) get_centroid(hv)),
          size = map_dbl(hv, \(hv) get_volume(hv)))
 
-
-
 ```
- 
-```{r, echo=F}
-df_e = readRDS('data/env_hvs.rds')
-```
+:::
 
+::: {.cell}
 
-```{r, eval=F}
+:::
+
+::: {.cell}
+
+```{.r .cell-code}
 # comparison of across each year
 df_y= tibble(y1 = unique(df_e$year),
              y2 = unique(df_e$year)) |> 
@@ -103,14 +142,30 @@ df_ov = tibble(basin = rep(unique(df$basin),
 write_csv(df_ov, 'data/env_hvComp.csv')
 
 ```
+:::
+
+
 
 ## Compare to baseline
-```{r, echo=F}
-df_ov = read_csv('data/env_hvComp.csv')
+
+
+::: {.cell}
+
 ```
+## Rows: 2805 Columns: 10
+## ── Column specification ────────────────────────────────────────────────────────
+## Delimiter: ","
+## chr (1): basin
+## dbl (9): y1, y2, ychange, lsr, dist_cent, jaccard, sorensen, uniq_y1, uniq_y2
+## 
+## ℹ Use `spec()` to retrieve the full column specification for this data.
+## ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+```
+:::
 
+::: {.cell}
 
-```{r}
+```{.r .cell-code}
 # filter only single year comparisons
 d = df_ov |> 
   filter(y1 == 1986)
@@ -133,6 +188,13 @@ ggplot(d, aes(y2, sorensen, color = basin))+
         legend.title = element_text(size = 14),
         strip.text.x = element_text(size = 14),
         legend.text = element_text(size = 12))
+```
+
+::: {.cell-output-display}
+![](asmt_analysis_files/figure-html/unnamed-chunk-6-1.png){width=672}
+:::
+
+```{.r .cell-code}
 
 # centroid distance 
 ggplot(d, aes(y2, dist_cent, color = basin))+
@@ -153,6 +215,13 @@ ggplot(d, aes(y2, dist_cent, color = basin))+
         legend.title = element_text(size = 14),
         strip.text.x = element_text(size = 14),
         legend.text = element_text(size = 12))
+```
+
+::: {.cell-output-display}
+![](asmt_analysis_files/figure-html/unnamed-chunk-6-2.png){width=672}
+:::
+
+```{.r .cell-code}
 
 
 # log size ratio
@@ -176,13 +245,32 @@ ggplot(d, aes(y2, lsr, color = basin))+
         legend.text = element_text(size = 12))
 ```
 
+::: {.cell-output-display}
+![](asmt_analysis_files/figure-html/unnamed-chunk-6-3.png){width=672}
+:::
+:::
+
+
+
 
 ## all comparisons without time
-```{r}
+
+
+::: {.cell}
+
+```{.r .cell-code}
 df_ov = read_csv('data/env_hvComp.csv') |> 
   mutate(basin = factor(basin, levels = 
                           c("Calcasieu", "Vermilion-Teche", "Terrebonne",
                             "Barataria", "Pontchartrain")))
+## Rows: 2805 Columns: 10
+## ── Column specification ────────────────────────────────────────────────────────
+## Delimiter: ","
+## chr (1): basin
+## dbl (9): y1, y2, ychange, lsr, dist_cent, jaccard, sorensen, uniq_y1, uniq_y2
+## 
+## ℹ Use `spec()` to retrieve the full column specification for this data.
+## ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
 #overlap
 ggplot(df_ov, aes(basin, sorensen, fill = basin))+
   geom_point(aes(color = basin), size = 1, 
@@ -202,6 +290,13 @@ ggplot(df_ov, aes(basin, sorensen, fill = basin))+
         legend.title = element_text(size = 14),
         strip.text.x = element_text(size = 14),
         legend.text = element_text(size = 12))
+```
+
+::: {.cell-output-display}
+![](asmt_analysis_files/figure-html/unnamed-chunk-7-1.png){width=672}
+:::
+
+```{.r .cell-code}
 
 # centroid distance
 ggplot(df_ov, aes(basin, dist_cent, fill = basin))+
@@ -223,6 +318,13 @@ ggplot(df_ov, aes(basin, dist_cent, fill = basin))+
         legend.title = element_text(size = 14),
         strip.text.x = element_text(size = 14),
         legend.text = element_text(size = 12))
+```
+
+::: {.cell-output-display}
+![](asmt_analysis_files/figure-html/unnamed-chunk-7-2.png){width=672}
+:::
+
+```{.r .cell-code}
 
 
 # log size ratio
@@ -246,9 +348,20 @@ ggplot(df_ov, aes(basin, lsr, fill = basin))+
         strip.text.x = element_text(size = 14),
         legend.text = element_text(size = 12))
 ```
+
+::: {.cell-output-display}
+![](asmt_analysis_files/figure-html/unnamed-chunk-7-3.png){width=672}
+:::
+:::
+
+
 ## Year to Year comparisons
 
-```{r}
+
+
+::: {.cell}
+
+```{.r .cell-code}
 # filter only single year comparisons
 d = df_ov |> 
   filter(ychange == 1)
@@ -271,6 +384,13 @@ ggplot(d, aes(y2, sorensen, color = basin))+
         legend.title = element_text(size = 14),
         strip.text.x = element_text(size = 14),
         legend.text = element_text(size = 12))
+```
+
+::: {.cell-output-display}
+![](asmt_analysis_files/figure-html/unnamed-chunk-8-1.png){width=672}
+:::
+
+```{.r .cell-code}
 
 # centroid distance 
 ggplot(d, aes(y2, dist_cent, color = basin))+
@@ -291,6 +411,13 @@ ggplot(d, aes(y2, dist_cent, color = basin))+
         legend.title = element_text(size = 14),
         strip.text.x = element_text(size = 14),
         legend.text = element_text(size = 12))
+```
+
+::: {.cell-output-display}
+![](asmt_analysis_files/figure-html/unnamed-chunk-8-2.png){width=672}
+:::
+
+```{.r .cell-code}
 
 # log size ratio
 ggplot(d, aes(y2, lsr, color = basin))+
@@ -313,11 +440,22 @@ ggplot(d, aes(y2, lsr, color = basin))+
         legend.text = element_text(size = 12))
 ```
 
+::: {.cell-output-display}
+![](asmt_analysis_files/figure-html/unnamed-chunk-8-3.png){width=672}
+:::
+:::
+
+
+
 
 
 ## Trend in stability 
 
-```{r}
+
+
+::: {.cell}
+
+```{.r .cell-code}
 library(MuMIn)
 # overlap 
 df_o = df_ov |> 
@@ -368,6 +506,13 @@ ggplot(d, aes(ychange, sorensen, color = basin))+
         legend.title = element_text(size = 14),
         strip.text.x = element_text(size = 14),
         legend.text = element_text(size = 12))
+```
+
+::: {.cell-output-display}
+![](asmt_analysis_files/figure-html/unnamed-chunk-9-1.png){width=672}
+:::
+
+```{.r .cell-code}
 
 # centroid distance
 df_cd = df_ov |> 
@@ -419,6 +564,13 @@ ggplot(d, aes(ychange, dist_cent, color = basin))+
         legend.title = element_text(size = 14),
         strip.text.x = element_text(size = 14),
         legend.text = element_text(size = 12))
+```
+
+::: {.cell-output-display}
+![](asmt_analysis_files/figure-html/unnamed-chunk-9-2.png){width=672}
+:::
+
+```{.r .cell-code}
 
 # log size ratio
 df_lsr = df_ov |> 
@@ -470,12 +622,22 @@ ggplot(d, aes(ychange, lsr, color = basin))+
         legend.title = element_text(size = 14),
         strip.text.x = element_text(size = 14),
         legend.text = element_text(size = 12))
-
 ```
+
+::: {.cell-output-display}
+![](asmt_analysis_files/figure-html/unnamed-chunk-9-3.png){width=672}
+:::
+:::
+
+
 
 2. Characterize the environmental niche of three species (white shrimp and 2 of your preference)
 
-```{r, eval=F}
+
+
+::: {.cell}
+
+```{.r .cell-code}
 df_sp = read_csv('data/LDWFseinedata.csv') |> 
   filter(basin %in% c("Terrebonne","Pontchartrain", "Barataria",
                       "Calcasieu","Vermilion-Teche"),
@@ -524,13 +686,20 @@ df = df_sp |>
 
 saveRDS(df, 'data/spp_hvs.rds')
 ```
+:::
 
-```{r, echo=F}
-df = readRDS('data/spp_hvs.rds')
-```
+::: {.cell}
+
+:::
+
+
 
 species comparisons
-```{r, eval=F}
+
+
+::: {.cell}
+
+```{.r .cell-code}
 # comparison of across each year
 df_spp= tibble(sp1 = unique(df$species),
              sp2 = unique(df$species)) |> 
@@ -573,11 +742,32 @@ df_ov = tibble(type = rep(unique(df$type),
 write_csv(df_ov, 'data/spp_comp.csv')
 
 ```
+:::
 
-```{r, echo=F}
-df_ov = read_csv('data/spp_comp.csv')
-df_ov
+::: {.cell}
+
 ```
+## Rows: 6 Columns: 8
+## ── Column specification ────────────────────────────────────────────────────────
+## Delimiter: ","
+## chr (3): type, sp1, sp2
+## dbl (5): dist_cent, jaccard, sorensen, uniq_sp1, uniq_sp2
+## 
+## ℹ Use `spec()` to retrieve the full column specification for this data.
+## ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+## # A tibble: 6 × 8
+##   type     sp1          sp2         dist_cent jaccard sorensen uniq_sp1 uniq_sp2
+##   <chr>    <chr>        <chr>           <dbl>   <dbl>    <dbl>    <dbl>    <dbl>
+## 1 presence Blue Crab    Brown Shri…     0.378   0.704    0.826   0.281    0.0295
+## 2 presence Blue Crab    White Shri…     0.356   0.761    0.865   0.213    0.0414
+## 3 presence Brown Shrimp White Shri…     0.177   0.841    0.914   0.0364   0.131 
+## 4 weighted Blue Crab    Brown Shri…     0.736   0.500    0.666   0.485    0.0572
+## 5 weighted Blue Crab    White Shri…     0.676   0.564    0.721   0.390    0.119 
+## 6 weighted Brown Shrimp White Shri…     0.482   0.681    0.810   0.0817   0.275
+```
+:::
+
+
 
 
  - What is the overall niche size of these three species?\
@@ -586,7 +776,11 @@ df_ov
 3. Quantify habitat suitability changes for selected species
  - How the proportion of suitable sites for your species has changed over 40 years, especially in the basin assigned for you?\
  
-```{r, eval=F}
+
+
+::: {.cell}
+
+```{.r .cell-code}
 # environmental data
 df_e = read_csv('data/LDWFseinedata.csv') |> 
   filter(basin %in% c("Terrebonne","Pontchartrain", "Barataria",
@@ -614,12 +808,25 @@ df = tibble(df_hv, df_e) |>
 
 write_csv(df, 'data/spp_suitability.csv')
 ```
- 
-```{r, echo=F}
-df = read_csv('data/spp_suitability.csv')
-```
+:::
 
-```{r}
+::: {.cell}
+
+```
+## Rows: 12360 Columns: 7
+## ── Column specification ────────────────────────────────────────────────────────
+## Delimiter: ","
+## chr (3): species, type, basin
+## dbl (4): lat, lon, year, suitability
+## 
+## ℹ Use `spec()` to retrieve the full column specification for this data.
+## ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+```
+:::
+
+::: {.cell}
+
+```{.r .cell-code}
 d = df |> 
   group_by(species, type, year, basin) |> 
   summarize(mean = mean(suitability),
@@ -629,6 +836,8 @@ d = df |>
     mutate(basin = factor(basin, levels = 
                           c("Calcasieu", "Vermilion-Teche", "Terrebonne",
                             "Barataria", "Pontchartrain")))
+## `summarise()` has grouped output by 'species', 'type', 'year'. You can override
+## using the `.groups` argument.
 
 
 # plot
@@ -649,6 +858,13 @@ ggplot(d, aes(year, mean, color = species))+
         legend.title = element_text(size = 14),
         strip.text.x = element_text(size = 14),
         legend.text = element_text(size = 12))
+```
+
+::: {.cell-output-display}
+![](asmt_analysis_files/figure-html/unnamed-chunk-16-1.png){width=672}
+:::
+
+```{.r .cell-code}
 
 
 
@@ -669,8 +885,14 @@ ggplot(d, aes(year, mean, color = species))+
         legend.title = element_text(size = 14),
         strip.text.x = element_text(size = 14),
         legend.text = element_text(size = 12))
-
 ```
+
+::: {.cell-output-display}
+![](asmt_analysis_files/figure-html/unnamed-chunk-16-2.png){width=672}
+:::
+:::
+
+
  
 
 ### Basin assignments
@@ -684,4 +906,5 @@ Nico - Calcasieu \
 ### Data 
 For this assignment we will be using the LDWF longterm data. 
 [LDWF seine data](https://github.com/SeascapeEcologyLab-workshops/BSC6926-B53B_Spring2025/blob/main/data/LDWFseinedata.csv)
+
 

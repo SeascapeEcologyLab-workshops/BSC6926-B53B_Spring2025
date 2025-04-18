@@ -8,5 +8,6 @@ ws2_cache/
 ws1_cache/
 ws3_cache/
 ws4_cache/
+asmt_analysis_cache/
 Objects
 data/*.rds

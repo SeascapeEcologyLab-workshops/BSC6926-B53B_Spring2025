@@ -27,3 +27,4 @@ Nico - Calcasieu \
 For this assignment we will be using the LDWF longterm data. 
 [LDWF seine data](https://github.com/SeascapeEcologyLab-workshops/BSC6926-B53B_Spring2025/blob/main/data/LDWFseinedata.csv)
 
+
