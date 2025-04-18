@@ -519,7 +519,61 @@ df = df_sp |>
          size = map_dbl(hv, \(hv) get_volume(hv)))
                                                                     
 
+saveRDS(df, 'data/spp_hvs.rds')
+```
 
+```{r, echo=F}
+df = readRDS('data/spp_hvs.rds')
+```
+
+species comparisons
+```{r, eval=F}
+# comparison of across each year
+df_spp= tibble(sp1 = unique(df$species),
+             sp2 = unique(df$species)) |> 
+  expand(sp1,sp2)
+
+# make all unique species comparisons 
+df_spp = df_spp[!duplicated(t(apply(df_spp,1,sort))),] %>% 
+  filter(!(sp1 == sp2))
+
+# make two df to join all unique comparisons  
+df1 = df |> 
+  select(type, sp1 = species, hv1 = hv, hv1_size = size, cent1 = centroid)
+
+df2 = df |> 
+  select(type, sp2 = species, hv2 = hv, hv2_size = size, cent2 = centroid)
+
+
+# create data frame of all data and make speciesly comparisons
+df_ov = tibble(type = rep(unique(df$type),
+                           each = nrow(df_spp)),
+               sp1 = rep(df_spp$sp1, times = length(unique(df$type))),
+               sp2 = rep(df_spp$sp2, times = length(unique(df$type)))) |> 
+  inner_join(df1, by = c('type', 'sp1')) |> 
+  inner_join(df2, by = c('type', 'sp2')) |> 
+  mutate(
+  # join hypervolumees in a set for cverlap
+         set = map2(hv1,hv2, \(hv1, hv2) hypervolume_set(hv1, hv2, check.memory = F, verbose = F)),
+  # calculate overlap
+         ov = map(set, \(set) hypervolume_overlap_statistics(set)),
+  # calculate centroid distance 
+         dist_cent = map2_dbl(hv1, hv2, \(hv1,hv2) hypervolume_distance(hv1, hv2, type = 'centroid', check.memory=F))) |> 
+  #unnest centroid differences
+  unnest_wider(ov) |> 
+  # select only metrics of interest
+  select(type, sp1, sp2,
+         dist_cent, jaccard, sorensen,
+         uniq_sp1 = frac_unique_1, uniq_sp2 = frac_unique_2)
+
+# save output
+write_csv(df_ov, 'data/spp_comp.csv')
+
+```
+
+```{r, echo=F}
+df_ov = read_csv('data/spp_comp.csv')
+df_ov
 ```
 
 
@@ -528,6 +582,36 @@ df = df_sp |>
  
 3. Quantify habitat suitability changes for selected species
  - How the proportion of suitable sites for your species has changed over 40 years, especially in the basin assigned for you?\
+ 
+```{r, eval=F}
+# environmental data
+df_e = read_csv('data/LDWFseinedata.csv') |> 
+  filter(basin %in% c("Terrebonne","Pontchartrain", "Barataria",
+                      "Calcasieu","Vermilion-Teche")) |> 
+  distinct(lat, lon, date, basin, Salinity, WaterTemp, Turbidity) |> 
+  mutate(date = ymd(date),
+         year = year(date),
+         across(c(Salinity:Turbidity), scale)) |> 
+  # slice_sample(n = 25) |> 
+  nest(info = c(lat:basin, year), data = Salinity:Turbidity)
+
+# species hypervolumes
+df_hv = readRDS('data/spp_hvs.rds') |> 
+  select(species, type, hv)
+
+
+df = tibble(df_hv, df_e) |> 
+  mutate(suitability = map2(hv, data, \(hv, data)
+                            hypervolume_inclusion_test(hv, data))) |> 
+  select(-hv) |> 
+  unnest(c(info, data, suitability)) |> 
+  group_by(species, type, lat, lon, basin, year) |> 
+  summarize(suitability = mean(suitability))
+
+
+write_csv(df, 'data/spp_suitability.csv')
+```
+ 
 
 ### Basin assignments
 Alia - Pontchartrain \
